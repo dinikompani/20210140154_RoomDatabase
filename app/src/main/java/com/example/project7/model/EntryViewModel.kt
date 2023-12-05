@@ -3,7 +3,6 @@ package com.example.project7.model
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
-import com.example.project7.data.Siswa
 import com.example.project7.repositori.RepositoriSiswa
 
 class EntryViewModel(private val repositoriSiswa: RepositoriSiswa): ViewModel() {
@@ -30,4 +29,9 @@ class EntryViewModel(private val repositoriSiswa: RepositoriSiswa): ViewModel() 
         }
     }
 }
+
+data class UIStateSiswa(
+    val detailSiswa: DetailSiswa = DetailSiswa(),
+    val isEntryValid: Boolean = false
+)
 
