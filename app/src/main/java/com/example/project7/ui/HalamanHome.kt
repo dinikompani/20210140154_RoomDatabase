@@ -154,7 +154,7 @@ fun DataSiswa(
                      contentDescription = null,
                  )
                  Text(
-                     text = siswa.telepon,
+                     text = siswa.telpon,
                      style = MaterialTheme.typography.titleMedium
                  )
             }
